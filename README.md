@@ -1,42 +1,38 @@
 # Programming Squad Wiki
 
-MkDocs Material scaffold for a project-based high-school programming squad knowledge base.
+A custom-built React + TypeScript knowledge platform for the NBHS Programming Squad.
 
-## Local setup
+## Stack
 
-1. Create and activate a virtual environment (recommended).
-2. Install dependencies:
+- React + TypeScript + Vite
+- React Router
+- Tailwind CSS
+- Lucide React icons
+- Local typed content/data files for pathways, projects, guides, and handbook pages
+
+## Local development
 
 ```bash
-pip install mkdocs-material
+npm install
+npm run dev
 ```
 
-## Run locally
+## Build
 
 ```bash
-mkdocs serve
+npm run build
 ```
 
-Then open `http://127.0.0.1:8000`.
-
-## Build validation
+## Lint
 
 ```bash
-mkdocs build --strict
+npm run lint
 ```
 
 ## Deployment
 
 GitHub Actions workflow: `.github/workflows/deploy.yml`
 
-- Runs on pushes to `main`
-- Builds the site with strict checks
-- Deploys to GitHub Pages using official actions
-
-## Repository URL placeholders
-
-Update these values in `mkdocs.yml` for your real repository:
-
-- `site_url: https://<your-org-or-username>.github.io/<repository-name>/`
-- `repo_url: https://github.com/<your-org-or-username>/<repository-name>`
-- `repo_name: <your-org-or-username>/<repository-name>`
+- Builds with `npm run build`
+- Uploads `dist/` to GitHub Pages
+- Deploys from `main`
