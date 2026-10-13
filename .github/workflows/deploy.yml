@@ -1,4 +1,4 @@
-name: Deploy MkDocs to GitHub Pages
+name: Deploy Programming Squad Wiki
 
 on:
   push:
@@ -22,24 +22,25 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          python-version: '3.12'
+          node-version: 22
+          cache: npm
 
       - name: Install dependencies
-        run: pip install mkdocs-material
+        run: npm ci
 
-      - name: Build site
-        run: mkdocs build --strict
+      - name: Build website
+        run: npm run build
 
       - name: Set up Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload Pages artifact
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: dist
 
   deploy:
     environment:
