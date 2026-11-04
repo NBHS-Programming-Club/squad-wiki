@@ -1,38 +1,23 @@
 # Programming Squad Wiki
 
-A custom-built React + TypeScript knowledge platform for the NBHS Programming Squad.
+A completely static, single-page learning wiki for the NBHS Programming Squad. It introduces four distinct pathways:
 
-## Stack
+- **ML & AI** — Python, data, mathematics, and machine learning
+- **Game Development** — Godot, GDScript, game systems, and design
+- **Informatics** — C++, algorithms, data structures, and contests
+- **Web Development** — HTML/CSS, JavaScript, React, SQL, and backends
 
-- React + TypeScript + Vite
-- React Router
-- Tailwind CSS
-- Lucide React icons
-- Local typed content/data files for pathways, projects, guides, and handbook pages
+Students choose one pathway and progress from zero knowledge through university-level topics. The site has no build step, framework, or dependency: open `index.html` directly or serve the repository with any static web server.
 
-## Local development
+## Features
 
-```bash
-npm install
-npm run dev
-```
-
-## Build
-
-```bash
-npm run build
-```
-
-## Lint
-
-```bash
-npm run lint
-```
+- Responsive, accessible static HTML/CSS/JavaScript
+- Pathway cards and interactive roadmap tabs
+- Four pathway-specific 20-activity project plans with staged checkpoints and final capstones
+- Searchable shared curriculum vocabulary
+- Starter equipment checklist and curated resources
+- Zero-to-advanced progression for every pathway
 
 ## Deployment
 
-GitHub Actions workflow: `.github/workflows/deploy.yml`
-
-- Builds with `npm run build`
-- Uploads `dist/` to GitHub Pages
-- Deploys from `main`
+The root `index.html` can be deployed directly to GitHub Pages or any static hosting provider.
