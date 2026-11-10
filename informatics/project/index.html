@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="NBHS Programming Squad Informatics guide: 5. Build the final project.">
+  <title>5. Build the final project | Informatics | NBHS Programming Squad</title>
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../../index.html"><span class="brand-mark">&lt;/&gt;</span><span>NBHS Programming Squad</span></a>
+      <nav class="focus-switch" aria-label="Focus areas">
+        <a href="../../ml/index.html">ML &amp; AI</a>
+        <a href="../../game/index.html">Game dev</a>
+        <a class="current" href="../../informatics/index.html">Informatics</a>
+        <a href="../../web/index.html">Web dev</a>
+        </nav>
+      <button class="menu" aria-label="Toggle table of contents" aria-expanded="false">&#9776;</button>
+    </div>
+  </header>
+  <div class="layout" id="top">
+    <aside class="sidebar" aria-label="Documentation navigation">
+      <p class="sidebar-title">Informatics guide</p>
+      <ul class="toc">
+        <li><a href="../index.html">1. Start here</a></li>
+        <li><a href="../setup/index.html">2. Set up your workspace</a></li>
+        <li><a href="../foundations/index.html">3. Shared foundations</a></li>
+        <li class="sub"><a href="../foundations/index.html#workflow">Learning workflow</a></li>
+        <li class="sub"><a href="../foundations/index.html#git">Git and GitHub</a></li>
+        <li><a href="../pathway/index.html">4. The Informatics pathway</a></li>
+        <li><a class="active" href="index.html">5. Build the final project</a></li>
+        <li><a href="../troubleshooting/index.html">6. Troubleshooting</a></li>
+        <li><a href="../glossary/index.html">7. Glossary and next steps</a></li>
+        </ul>
+    </aside>
+    <main id="content">
+      <div class="breadcrumbs"><a href="../../index.html">Documentation</a> / <a href="../index.html">Informatics</a> / 5. Build the final project</div>
+      <h2>5. Build the final project</h2>
+      <p class="section-intro">The capstone is the end of the guide, not the first activity. It should answer a real question, solve a defined problem, or create a complete experience for a specific user. The project is assessed by its reasoning and documentation as well as its output.</p>
+      <div id="planning" class="phase"><h3>5.1 Plan before coding</h3><p>Write a one-page proposal. Name the user, the problem, the smallest useful result, and what you will deliberately not build. List unknowns as questions to investigate.</p>
+        <div class="deliverable"><strong>Planning deliverable:</strong> proposal, user story or problem statement, sketch, scope cut list, risks, and a definition of "done".</div></div>
+      <div class="phase"><h3>5.2 Set up a maintainable repository</h3><p>Start with a README, a sensible folder structure, an ignored secrets file, and a way to run the project from a fresh clone. Make the first commit before adding features.</p>
+        <pre><code>README.md
+src/              # source code
+tests/            # automated checks, when applicable
+assets/           # small, redistributable assets
+.gitignore</code></pre>
+      </div>
+      <div id="implementation" class="phase"><h3>5.3 Implement in vertical slices</h3><p>Build one small path from input to useful output. Keep it runnable, then add the next slice. Commit after each verified behaviour. Avoid building an entire layer before checking that the user journey works.</p>
+        <div class="table-wrap"><table><thead><tr><th>Slice</th><th>Evidence</th></tr></thead><tbody><tr><td>Happy path</td><td>A new user can complete the main action.</td></tr><tr><td>Invalid input</td><td>The project explains what is wrong and does not corrupt state.</td></tr><tr><td>Empty or missing data</td><td>The interface or program remains understandable.</td></tr><tr><td>Failure and recovery</td><td>You can reproduce an error and explain how to recover.</td></tr></tbody></table></div>
+      </div>
+      <div id="review" class="phase"><h3>5.4 Review, polish, and ship</h3><p>Ask at least one other student to use the project without coaching. Watch rather than immediately explaining. Turn observations into issues, fix the highest-impact problems, and record trade-offs you kept.</p>
+        <div class="checklist"><div class="check">A clean clone can be installed and run.</div><div class="check">The README includes usage and known limits.</div><div class="check">Core behaviour has tests or repeatable checks.</div><div class="check">No secrets or private data are committed.</div><div class="check">The project works at its intended screen size or target platform.</div><div class="check">A demo explains the problem, design, result, and next step.</div></div>
+      </div>
+      <h3>Final submission checklist</h3>
+      <ol class="steps">
+        <li><strong>Repository.</strong> Source, assets, setup instructions, and a meaningful commit history.</li>
+        <li><strong>Technical explanation.</strong> Architecture, important decisions, alternatives considered, and limitations.</li>
+        <li><strong>Verification.</strong> Tests, manual checks, screenshots or a playable build, and known issues.</li>
+        <li><strong>Demonstration.</strong> A short walkthrough that begins with the user problem, not a list of technologies.</li>
+        <li><strong>Reflection.</strong> What changed after feedback, what failed, and what you would do next.</li>
+      </ol>
+      <nav class="pager" aria-label="Page navigation"><a class="prev" href="../pathway/index.html"><small>Previous</small>4. The Informatics pathway</a><a class="next" href="../troubleshooting/index.html"><small>Next</small>6. Troubleshooting</a></nav>
+      <p class="footer">NBHS Programming Squad documentation · Informatics guide · Keep this guide close to your repository README and update it when the squad's tools or workflow change.</p>
+    </main>
+  </div>
+  <script src="../../assets/site.js"></script>
+</body>
+</html>

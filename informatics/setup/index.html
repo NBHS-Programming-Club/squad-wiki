@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="NBHS Programming Squad Informatics guide: 2. Set up your workspace.">
+  <title>2. Set up your workspace | Informatics | NBHS Programming Squad</title>
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../../index.html"><span class="brand-mark">&lt;/&gt;</span><span>NBHS Programming Squad</span></a>
+      <nav class="focus-switch" aria-label="Focus areas">
+        <a href="../../ml/index.html">ML &amp; AI</a>
+        <a href="../../game/index.html">Game dev</a>
+        <a class="current" href="../../informatics/index.html">Informatics</a>
+        <a href="../../web/index.html">Web dev</a>
+        </nav>
+      <button class="menu" aria-label="Toggle table of contents" aria-expanded="false">&#9776;</button>
+    </div>
+  </header>
+  <div class="layout" id="top">
+    <aside class="sidebar" aria-label="Documentation navigation">
+      <p class="sidebar-title">Informatics guide</p>
+      <ul class="toc">
+        <li><a href="../index.html">1. Start here</a></li>
+        <li><a class="active" href="index.html">2. Set up your workspace</a></li>
+        <li><a href="../foundations/index.html">3. Shared foundations</a></li>
+        <li class="sub"><a href="../foundations/index.html#workflow">Learning workflow</a></li>
+        <li class="sub"><a href="../foundations/index.html#git">Git and GitHub</a></li>
+        <li><a href="../pathway/index.html">4. The Informatics pathway</a></li>
+        <li><a href="../project/index.html">5. Build the final project</a></li>
+        <li><a href="../troubleshooting/index.html">6. Troubleshooting</a></li>
+        <li><a href="../glossary/index.html">7. Glossary and next steps</a></li>
+        </ul>
+    </aside>
+    <main id="content">
+      <div class="breadcrumbs"><a href="../../index.html">Documentation</a> / <a href="../index.html">Informatics</a> / 2. Set up your workspace</div>
+      <h2>2. Set up your workspace</h2>
+      <p class="section-intro">Install the shared tools first, then the tools for this pathway. If you are using a school computer, ask before installing software.</p>
+      <h3>Shared tools</h3>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Tool</th><th>Purpose</th><th>Check</th></tr></thead>
+        <tbody>
+          <tr><td>VS Code</td><td>Write and inspect source files.</td><td>Open it and create a plain text file.</td></tr>
+          <tr><td>Git</td><td>Record changes and move between versions.</td><td><code>git --version</code></td></tr>
+          <tr><td>GitHub account</td><td>Store code and share work.</td><td>Sign in at <a href="https://github.com">github.com</a>.</td></tr>
+          <tr><td>Terminal</td><td>Run programs and tools directly.</td><td><code>echo hello</code></td></tr>
+        </tbody>
+      </table></div>
+      <h3>Informatics tools</h3>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Tool</th><th>Purpose</th><th>Check</th></tr></thead>
+        <tbody><tr><td>C++ compiler</td><td>GCC, Clang, or MSVC to build your solutions.</td><td><code>g++ --version</code> or <code>clang++ --version</code></td></tr><tr><td>Judge account</td><td>A practice site that checks solutions automatically.</td><td>Submit a solution to a sample problem.</td></tr></tbody>
+      </table></div>
+      <div class="callout warning"><strong>Tool problem?</strong> Record the operating system, tool version, command you ran, and complete error message. Avoid copying a random command from a forum until you understand what it changes.</div>
+      <h3>Create a project folder</h3>
+      <pre><code>mkdir programming-squad
+cd programming-squad
+mkdir exercises final-project
+git init</code></pre>
+      <p>Use a separate repository for your final project when you are ready. Keep the repository name short, use a README, and never commit passwords, API keys, or private personal data.</p>
+      <nav class="pager" aria-label="Page navigation"><a class="prev" href="../index.html"><small>Previous</small>1. Start here</a><a class="next" href="../foundations/index.html"><small>Next</small>3. Shared foundations</a></nav>
+      <p class="footer">NBHS Programming Squad documentation · Informatics guide · Keep this guide close to your repository README and update it when the squad's tools or workflow change.</p>
+    </main>
+  </div>
+  <script src="../../assets/site.js"></script>
+</body>
+</html>

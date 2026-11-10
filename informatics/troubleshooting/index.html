@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="NBHS Programming Squad Informatics guide: 6. Troubleshooting.">
+  <title>6. Troubleshooting | Informatics | NBHS Programming Squad</title>
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../../index.html"><span class="brand-mark">&lt;/&gt;</span><span>NBHS Programming Squad</span></a>
+      <nav class="focus-switch" aria-label="Focus areas">
+        <a href="../../ml/index.html">ML &amp; AI</a>
+        <a href="../../game/index.html">Game dev</a>
+        <a class="current" href="../../informatics/index.html">Informatics</a>
+        <a href="../../web/index.html">Web dev</a>
+        </nav>
+      <button class="menu" aria-label="Toggle table of contents" aria-expanded="false">&#9776;</button>
+    </div>
+  </header>
+  <div class="layout" id="top">
+    <aside class="sidebar" aria-label="Documentation navigation">
+      <p class="sidebar-title">Informatics guide</p>
+      <ul class="toc">
+        <li><a href="../index.html">1. Start here</a></li>
+        <li><a href="../setup/index.html">2. Set up your workspace</a></li>
+        <li><a href="../foundations/index.html">3. Shared foundations</a></li>
+        <li class="sub"><a href="../foundations/index.html#workflow">Learning workflow</a></li>
+        <li class="sub"><a href="../foundations/index.html#git">Git and GitHub</a></li>
+        <li><a href="../pathway/index.html">4. The Informatics pathway</a></li>
+        <li><a href="../project/index.html">5. Build the final project</a></li>
+        <li><a class="active" href="index.html">6. Troubleshooting</a></li>
+        <li><a href="../glossary/index.html">7. Glossary and next steps</a></li>
+        </ul>
+    </aside>
+    <main id="content">
+      <div class="breadcrumbs"><a href="../../index.html">Documentation</a> / <a href="../index.html">Informatics</a> / 6. Troubleshooting</div>
+      <h2>6. Troubleshooting</h2>
+      <p class="section-intro">Most errors are useful reports from a tool. Slow down, make the failure repeatable, and change one variable at a time.</p>
+      <details open><summary>"Command not found" or the editor cannot find a tool</summary><p>Confirm the tool is installed, restart the terminal, and check its version. On Windows, verify the installer added the tool to PATH. On macOS or Linux, check the shell configuration. Record the exact command and operating system before asking for help.</p></details>
+      <details><summary>The program runs but gives the wrong answer</summary><p>Write the smallest input that demonstrates the wrong result. Print or inspect intermediate values. Compare the program with a hand-worked example, then add that example as a test so the bug does not return.</p></details>
+      <details><summary>Git says there are conflicts or rejected changes</summary><p>Do not delete files to make the message disappear. Read <code>git status</code>, inspect the conflicting sections, keep the intended content, then test before committing. Ask a mentor if you are unsure which version is correct.</p></details>
+      <details><summary>I copied a tutorial and do not understand my own project</summary><p>Stop adding features. Rename variables, explain each function in your notes, and rebuild one small part without looking. The goal is transferable understanding, not a particular code listing.</p></details>
+      <details><summary>I am stuck and do not know what to ask</summary><p>Use this format: "I am trying to ___. I expected ___. Instead I got ___. I tested ___. Here is the smallest relevant code/error: ___." This gives another person enough context to help without guessing.</p></details>
+      <nav class="pager" aria-label="Page navigation"><a class="prev" href="../project/index.html"><small>Previous</small>5. Build the final project</a><a class="next" href="../glossary/index.html"><small>Next</small>7. Glossary and next steps</a></nav>
+      <p class="footer">NBHS Programming Squad documentation · Informatics guide · Keep this guide close to your repository README and update it when the squad's tools or workflow change.</p>
+    </main>
+  </div>
+  <script src="../../assets/site.js"></script>
+</body>
+</html>
